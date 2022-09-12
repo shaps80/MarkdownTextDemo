@@ -5,26 +5,26 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/shaps80/MarkdownText",
       "state" : {
-        "branch" : "main",
-        "revision" : "a52807df5788b6f44fcfab4b0de1957bccc7de00"
+        "revision" : "e01988975142cd56df940dfbfed90f3d14d8bb06",
+        "version" : "1.0.0"
       }
     },
     {
       "identity" : "swift-cmark",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-cmark.git",
+      "location" : "https://github.com/shaps80/swift-cmark.git",
       "state" : {
-        "branch" : "gfm",
-        "revision" : "476f7b4fcf12eba381b4aaed8987006fd8fcec9c"
+        "revision" : "476f7b4fcf12eba381b4aaed8987006fd8fcec9c",
+        "version" : "0.2.0"
       }
     },
     {
       "identity" : "swift-markdown",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-markdown",
+      "location" : "https://github.com/shaps80/swift-markdown",
       "state" : {
-        "branch" : "main",
-        "revision" : "52563fc74a540b29854fde20e836b27394be2749"
+        "revision" : "83188dee2dbccfa70124c56055dd0b759d3e4ec3",
+        "version" : "0.3.0"
       }
     },
     {
