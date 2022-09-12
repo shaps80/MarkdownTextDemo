@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "markdowntext",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shaps80/MarkdownText",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a52807df5788b6f44fcfab4b0de1957bccc7de00"
+      }
+    },
+    {
+      "identity" : "swift-cmark",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-cmark.git",
+      "state" : {
+        "branch" : "gfm",
+        "revision" : "476f7b4fcf12eba381b4aaed8987006fd8fcec9c"
+      }
+    },
+    {
+      "identity" : "swift-markdown",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-markdown",
+      "state" : {
+        "branch" : "main",
+        "revision" : "52563fc74a540b29854fde20e836b27394be2749"
+      }
+    },
+    {
+      "identity" : "swiftuibackports",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shaps80/SwiftUIBackports",
+      "state" : {
+        "revision" : "252d01385a0730cc604310373ac934a64f1d4b1a",
+        "version" : "1.8.2"
+      }
+    }
+  ],
+  "version" : 2
+}
