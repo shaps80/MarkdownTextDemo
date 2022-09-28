@@ -13,8 +13,6 @@
 		540BE00928CCDF9F001433EE /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540BDFF828CCDF9E001433EE /* DemoApp.swift */; };
 		540BE00C28CCDF9F001433EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540BDFFA28CCDF9F001433EE /* Assets.xcassets */; };
 		540BE00D28CCDF9F001433EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540BDFFA28CCDF9F001433EE /* Assets.xcassets */; };
-		547A45A428CF3C9200FDDFB7 /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = 547A45A328CF3C9200FDDFB7 /* Samples */; };
-		547A45A528CF3C9200FDDFB7 /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = 547A45A328CF3C9200FDDFB7 /* Samples */; };
 		547A45AC28CF3CD900FDDFB7 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A45A628CF3CD900FDDFB7 /* Styles.swift */; };
 		547A45AD28CF3CD900FDDFB7 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A45A628CF3CD900FDDFB7 /* Styles.swift */; };
 		547A45AE28CF3CD900FDDFB7 /* RepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A45A728CF3CD900FDDFB7 /* RepoListView.swift */; };
@@ -36,7 +34,6 @@
 		540BDFFF28CCDF9F001433EE /* MarkdownTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkdownTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		540BE00528CCDF9F001433EE /* MarkdownTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkdownTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		540BE00728CCDF9F001433EE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		547A45A328CF3C9200FDDFB7 /* Samples */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Samples; path = ../../MarkdownView/Resources/Samples; sourceTree = "<group>"; };
 		547A45A628CF3CD900FDDFB7 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		547A45A728CF3CD900FDDFB7 /* RepoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoListView.swift; sourceTree = "<group>"; };
 		547A45A828CF3CD900FDDFB7 /* Trending.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trending.swift; sourceTree = "<group>"; };
@@ -118,7 +115,6 @@
 		54B863AC28CF30C600E251B1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				547A45A328CF3C9200FDDFB7 /* Samples */,
 				547A45B828CF3D0900FDDFB7 /* iOS-Info.plist */,
 				540BE00728CCDF9F001433EE /* macOS.entitlements */,
 				540BDFFA28CCDF9F001433EE /* Assets.xcassets */,
@@ -215,7 +211,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				547A45A428CF3C9200FDDFB7 /* Samples in Resources */,
 				540BE00C28CCDF9F001433EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				547A45A528CF3C9200FDDFB7 /* Samples in Resources */,
 				540BE00D28CCDF9F001433EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
