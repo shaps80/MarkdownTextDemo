@@ -12,20 +12,16 @@ enum Client {
     static func fetchRepos() async throws {
         guard cache.repos.isEmpty else { return }
 
-        print("Fetching repos...")
         let data = try await URLSession.shared
             .backport.data(from: url).0
-        print("Fetched repos.")
 
         let items = try decoder.decode(Repo.Items.self, from: data)
         cache.repos = items.repos
     }
 
     static func fetchReadme(for repo: Repo) async throws -> String {
-        print("Fetching \(repo.id) readme...")
         let data = try await URLSession.shared
             .backport.data(from: repo.url).0
-        print("Fetched \(repo.id) readme")
         return String(decoding: data, as: UTF8.self)
     }
 }
