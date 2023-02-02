@@ -41,6 +41,7 @@
 		547A45AA28CF3CD900FDDFB7 /* SampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		547A45AB28CF3CD900FDDFB7 /* ReadMeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMeView.swift; sourceTree = "<group>"; };
 		547A45B828CF3D0900FDDFB7 /* iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-Info.plist"; sourceTree = "<group>"; };
+		54B0EE2C298BE406009695D8 /* MarkdownText */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MarkdownText; path = Packages/MarkdownText; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		540BDFF228CCDF9E001433EE = {
 			isa = PBXGroup;
 			children = (
+				54B0EE2C298BE406009695D8 /* MarkdownText */,
 				54B863AB28CF30B700E251B1 /* Views */,
 				540BDFF728CCDF9E001433EE /* Shared */,
 				54B863AC28CF30C600E251B1 /* Resources */,

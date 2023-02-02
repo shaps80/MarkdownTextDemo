@@ -17,27 +17,25 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                Section {
-                    ForEach(urls, id: \.lastPathComponent) { url in
-                        NavigationLink(url.deletingPathExtension().lastPathComponent) {
-                            SampleView(url: url)
-                        }
-                    }
-                } header: {
-                    Text("Samples")
-                }
+//                Section {
+//                    ForEach(urls, id: \.lastPathComponent) { url in
+//                        NavigationLink(url.deletingPathExtension().lastPathComponent) {
+//                            SampleView(url: url)
+//                        }
+//                    }
+//                } header: {
+//                    Text("Samples")
+//                }
 
                 Section {
                     RepoListView()
-                } header: {
-                    Text("Trending")
                 }
                 .overlay(ProgressView().opacity(isFetching ? 1 : 0))
             }
 #if os(iOS)
             .listStyle(.insetGrouped)
 #endif
-            .navigationTitle("Markdown")
+            .navigationTitle("Swift Repos")
         }
         .markdownHeadingStyle(.custom)
         .markdownQuoteStyle(.custom)
@@ -62,6 +60,14 @@ struct ContentView: View {
 
         do {
             try await Client.fetchRepos()
+        } catch DecodingError.keyNotFound(_, let context) {
+            print(context)
+        } catch DecodingError.dataCorrupted(let context) {
+            print(context)
+        } catch DecodingError.typeMismatch(_, let context) {
+            print(context)
+        } catch DecodingError.valueNotFound(_, let context) {
+            print(context)
         } catch {
             clientError = ClientError(error: error)
         }

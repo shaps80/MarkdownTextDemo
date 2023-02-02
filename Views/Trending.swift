@@ -3,7 +3,7 @@ import SwiftUIBackports
 
 @MainActor
 enum Client {
-    private static let url = URL(string: "https://gh-trending-api.herokuapp.com/repositories/swift")!
+    private static let url = URL(string: "https://api.github.com/search/repositories?sort=stars&order=desc&q=language:swift")!
     private static let decoder = JSONDecoder()
 
     // hacky, but good enough for this demo
@@ -17,8 +17,8 @@ enum Client {
             .backport.data(from: url).0
         print("Fetched repos.")
 
-        let updates = try decoder.decode([Repo].self, from: data)
-        cache.repos = updates
+        let items = try decoder.decode(Repo.Items.self, from: data)
+        cache.repos = items.repos
     }
 
     static func fetchReadme(for repo: Repo) async throws -> String {
@@ -55,16 +55,21 @@ final class Cache: ObservableObject {
 
 struct Repo: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
-        case owner = "username"
-        case name = "repositoryName"
+        case id = "full_name"
     }
 
-    var id: String { "\(owner)/\(name)" }
-    var owner: String
-    var name: String
+    var id: String
 
     var url: URL {
-        URL(string: "https://raw.githubusercontent.com/\(owner)/\(name)/master/README.md")!
+        URL(string: "https://raw.githubusercontent.com/\(id)/master/README.md")!
+    }
+
+    struct Items: Codable {
+        enum CodingKeys: String, CodingKey {
+            case repos = "items"
+        }
+
+        let repos: [Repo]
     }
 }
 

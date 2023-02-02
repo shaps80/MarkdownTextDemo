@@ -9,12 +9,10 @@ struct RepoListView: View {
                 ReadMeView(repo: repo)
             } label: {
                 VStack(alignment: .leading) {
-                    Text(repo.name)
-                        .fontWeight(.medium)
-
-                    Text(repo.owner)
-                        .foregroundColor(.secondary)
+                    Text(repo.id)
+                        .foregroundColor(.primary)
                         .font(.footnote)
+                        .fontWeight(.medium)
                 }
                 .padding(.vertical, 4)
             }

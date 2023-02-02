@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "markdowntext",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/shaps80/MarkdownText",
-      "state" : {
-        "revision" : "e01988975142cd56df940dfbfed90f3d14d8bb06",
-        "version" : "1.0.0"
-      }
-    },
-    {
       "identity" : "swift-cmark",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/shaps80/swift-cmark.git",
@@ -32,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/shaps80/SwiftUIBackports",
       "state" : {
-        "revision" : "252d01385a0730cc604310373ac934a64f1d4b1a",
-        "version" : "1.8.2"
+        "revision" : "562ed614aabc205e6a184ca6809b2f73e04727d4",
+        "version" : "1.12.0"
       }
     }
   ],

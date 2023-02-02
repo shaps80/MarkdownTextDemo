@@ -22,7 +22,7 @@ struct ReadMeView: View {
         #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
         #endif
-        .navigationTitle("\(repo.name)")
+        .navigationTitle("\(repo.id)")
         .backport.task {
             guard markdown.isEmpty else { return }
 
@@ -39,5 +39,10 @@ struct ReadMeView: View {
             Alert(title: Text("Failed"), message: Text(error.localizedDescription))
         }
         .overlay(ProgressView().opacity(isFetching ? 1 : 0))
+        .toolbar {
+            Backport.ShareLink(item: URL(string: "https://github.com/\(repo.id)")!) {
+                Label("Share", systemImage: "square.and.arrow.up")
+            }
+        }
     }
 }
