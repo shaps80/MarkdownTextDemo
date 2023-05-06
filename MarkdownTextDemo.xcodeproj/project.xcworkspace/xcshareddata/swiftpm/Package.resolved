@@ -19,12 +19,21 @@
       }
     },
     {
+      "identity" : "swiftbackports",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shaps80/SwiftBackports",
+      "state" : {
+        "revision" : "fafbeabf78b7e364abbbb7565cdfeee42af16211",
+        "version" : "1.0.2"
+      }
+    },
+    {
       "identity" : "swiftuibackports",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/shaps80/SwiftUIBackports",
       "state" : {
-        "revision" : "562ed614aabc205e6a184ca6809b2f73e04727d4",
-        "version" : "1.12.0"
+        "revision" : "afac0c36c4e4a073c7cb998a194160eff510bc41",
+        "version" : "2.0.0"
       }
     }
   ],
